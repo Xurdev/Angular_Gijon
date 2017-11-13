@@ -1,2 +1,3 @@
-# Angular_Gijon
-Curso de Angular
+# Angular Gijón #
+
+Curso de Angular Indra Gijón (Nov 2017) 
