@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          Referencias locales
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="name">Escribe tu nombre y haz enter:</label>
+            <input type="text" #localName
+              class="form-control" name="name" id="name">            
+          </div>
+          <div class="form-group">
+            <button type="button"
+                (click) = "localNombre.value = 'x'" 
+                class="btn btn-primary">Guardar</button>
+            <button type="button" 
+                (click) = "localNombre.value = ''"
+                class="btn btn-primary">Borrar</button>
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          Hello {{localName.value}}
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>
