@@ -5,6 +5,7 @@ import { ListaComponent } from './lista/lista.component';
 import { ListaV4Component } from './lista-v4/lista-v4.component';
 import { FormsModule } from '@angular/forms';
 import { ListaColoresComponent } from './lista-colores/lista-colores.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { ListaColoresComponent } from './lista-colores/lista-colores.component';
   declarations: [MainComponent,
     ListaComponent,
     ListaV4Component,
-    ListaColoresComponent],
+    ListaColoresComponent,
+    PipesComponent],
   exports: [MainComponent]
 })
 export class MainModule { }
