@@ -3,7 +3,7 @@
       <div class="col">
           <div class="card">
             <div class="card-header">
-              Lista de tareas
+              Lista de tareas en Angular 4
             </div>
             <div class="card-body">
               <div class="form-group">
@@ -15,13 +15,21 @@
               </div>
             </div>
             <div class="card-footer text-muted">
-              <h3 *ngIf="aTareas.length">Tareas</h3>
-              <ul class="list-group">
-                <li class="list-group-item" 
-                  *ngFor="let tarea of aTareas; let i = index">
-                    {{tarea}} ({{i+1}})
-                </li>
-              </ul>
+              <div *ngIf="aTareas.length; then hayTareas else sinTareas"></div>  
+              <ng-template #hayTareas> 
+                <h3>Tareas</h3>
+                <ul class="list-group">
+                  <li class="list-group-item" 
+                    *ngFor="let tarea of aTareas; let i = index">
+                      {{tarea}} ({{i+1}})
+                  </li>
+                </ul>
+              </ng-template>  
+              <ng-template #sinTareas> 
+                <p>
+                  Añade tu primera tarea!!
+                </p>
+              </ng-template>              
             </div>
           </div>
       </div>        

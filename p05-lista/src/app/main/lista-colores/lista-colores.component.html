@@ -1,0 +1,21 @@
+<div class="container mb-2">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          Suma colores
+        </div>
+        <div class="card-body">
+          <button type="button" (click)="btnSumar()"
+            id="sumar" class="btn btn-primary">Sumar</button>
+            <button type="button" (click)="btnRestar()"
+            id="sumar" class="btn btn-primary">Restar</button>
+        </div>
+        <div class="card-footer text-muted">
+          El total es <span [ngClass]="oColores">{{nTotal}}</span> 
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>

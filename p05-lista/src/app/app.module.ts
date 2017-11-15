@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { MainModule } from './main/main.module';
+import { ListaColoresComponent } from './main/lista-colores/lista-colores.component';
 
 @NgModule({
   declarations: [
