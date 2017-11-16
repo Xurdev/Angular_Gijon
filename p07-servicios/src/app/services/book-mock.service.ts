@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 
+
 @Injectable()
 export class BookMockService {
 
@@ -15,6 +16,18 @@ export class BookMockService {
 
   getBook(key: string) {
     return this.aBooks;
+  }
+
+  searchBooksAsnc(key: string) {
+    return new Promise(
+      // function (resolve, reject) {}
+      (resolve, reject) => {
+        setTimeout (
+          () => {resolve(JSON.stringify(this.aBooks)); }
+          , 1000
+        );
+      }
+    );
   }
 
 }
