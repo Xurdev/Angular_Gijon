@@ -5,6 +5,8 @@ import { SharedModule } from './shared/shared.module';
 import { MainModule } from './main/main.module';
 import { BookMockService } from './services/book-mock.service';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { BookGoogleService } from './services/book-google.service';
 
 @NgModule({
   declarations: [
@@ -14,10 +16,12 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     MainModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [
-    BookMockService
+    BookMockService,
+    BookGoogleService
   ],
   bootstrap: [AppComponent]
 })
